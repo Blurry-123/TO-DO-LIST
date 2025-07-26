@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playwrite HU", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('view-starry-night-sky-with-nature-mountains-landscape.jpg') no-repeat center center/cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.todo-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.todo-app {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: lightgray;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+.todo-app h1 {
+  font-size: 2rem;
+}
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.input-area input {
+  flex: 1;
+  padding: 10px 17px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  background: rgba(255, 194, 250, 0.1);
+  color: white;
+  transition: background 0.3s ease;
+}
+.input-area input::placeholder {
+  color: lightgray;
+}
+.input-area button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(255, 194, 250, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.input-area button:hover {
+  background: rgba(255, 194, 250, 0.2);
+  transform: scale(1.05);
+}
+.todos-container {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+.task-item span {
+  flex-grow: 1;
+}
+.task-item input[type="checkbox"] {
+  transform: scale(1.2);
+}
+.task-item button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.task-item button:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
