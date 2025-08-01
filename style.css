@@ -120,3 +120,62 @@ body {
   transform: scale(1.2);
   transition: transform 0.2s ease;
 }
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .todo-app {
+    width: 100%;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .todo-app h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .input-area input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .input-area button {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .task-item span {
+    font-size: 1rem;
+  }
+
+  .task-item button {
+    font-size: 0.9rem;
+  }
+
+  .todos-container {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
