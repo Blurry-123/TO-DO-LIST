@@ -179,3 +179,20 @@ body {
     overflow-y: visible;
   }
 }
+@media (max-width: 375px) {
+  .task-item span {
+    font-size: 0.9rem;
+  }
+}
+.task-item {
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-item span {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
